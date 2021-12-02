@@ -8,13 +8,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Library of Congress</title>
   </head>
   <body>
-    <div>Hello World</div>
+    <section
+      class="
+        search-engine-container
+        d-flex
+        justify-content-center
+        align-items-center
+        vh-100
+      "
+    >
+      <form class="search-engine d-flex flex-column w-75 p-3">
+        <h1 class="my-3 text-center primary-header">
+          <strong> Library of Congress Search Engine </strong>
+        </h1>
+        <div class="form-group">
+          <input
+            type="text"
+            class="my-3 form-control"
+            placeholder="Search..."
+          />
+          <select id="format" class="my-3 form-control">
+            <option value="">-----</option>
+            <option value="maps">Maps</option>
+            <option value="audio">Audio</option>
+            <option value="photos">Photos</option>
+            <option value="manuscripts">Manuscripts</option>
+            <option value="newspapers">Newspapers</option>
+            <option value="film-and-videos">Film and Videos</option>
+            <option value="notated-music">Notated Music</option>
+            <option value="websites">Websites</option>
+          </select>
+        </div>
+        <button type="submit" class="btn submit-btn text-light">Submit</button>
+      </form>
+    </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </html>
