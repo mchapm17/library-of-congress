@@ -1,8 +1,7 @@
 var search ="search";
 var input = document.querySelector('#text-search');
 var submitBtn = document.querySelector('#submit-btn');
-var format = document.querySelector('#format');
-var formatValue = input.value;
+var formatValue = document.querySelector('#format').value;
 
 
 var getLoc = function (api, input) {
@@ -20,13 +19,13 @@ var getLoc = function (api, input) {
 }
 
 var submitted = function() {
-    if (!inputValue) {
-        getLoc(search, input);
-    } else {
+    if (formatValue) {
         getLoc(formatValue, input);
+    } else {
+        getLoc(search, input);
     }
 
-    document.location('./searchresults.html');
+   location.replace('./searchresults.html');
 }
 
 submitBtn.addEventListener('click', submitted);
