@@ -1,0 +1,40 @@
+:root {
+    --Navy-Blue: #05445E;
+    --Blue-Grotto: #189AB4;
+    --Blue-Green: #BCE3E3;
+    --Baby-Blue: #D4F1F4;
+    --Sea-Foam-Green: #00cbb7;
+}
+
+section.search-engine-container {
+    background-color: var(--Navy-Blue);
+}
+
+section.search-engine-container form.search-engine {
+
+ background-color: var(--Blue-Green);
+}
+
+section.search-engine-container form.search-engine .primary-header {
+    font-size: 2rem;
+    color: var(--Navy-Blue);
+}
+
+section.search-engine-container form.search-engine .submit-btn {
+    background-color: var(--Sea-Foam-Green);
+}
+/* .search-engine {
+
+} */
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+    section.search-engine-container form.search-engine .primary-header {
+        font-size: 1.3rem;
+    }
+}
